@@ -49,7 +49,7 @@ class Classe_User:
                 for name, url in repos.items():
                     file.write(f"{name}: {url}\n")
         except Exception as e:
-            print(f"Error saving file: {e}")
+            print(f"{e}")
 
     def __repr__(self):
         return (f"Usuário: {self.usuario}\n"
